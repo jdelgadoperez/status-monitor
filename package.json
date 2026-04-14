@@ -1,0 +1,21 @@
+{
+  "name": "dev-status-bar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "macOS menu bar indicator for GitHub and Claude service status",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "bootstrap": "bash scripts/setup.sh",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "dev": "tsc && node dist/dev-status.js",
+    "install-plugin": "pnpm build && chmod +x dist/dev-status.js && cp dist/dev-status.js \"$HOME/Library/Application Support/SwiftBar/Plugins/dev-status.js\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}
