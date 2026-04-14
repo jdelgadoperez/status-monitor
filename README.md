@@ -40,7 +40,7 @@ brew install pnpm
 ### Step 2 — Clone the repo
 
 ```bash
-git clone <repo-url> ~/Documents/status-monitor
+git clone https://github.com/hiimagu/status-monitor ~/Documents/status-monitor
 cd ~/Documents/status-monitor
 ```
 
