@@ -7,7 +7,7 @@
 /**
  * Dev Status Bar — SwiftBar Plugin
  *
- * Displays the live status of GitHub and Claude services
+ * Displays the live status of GitHub, Claude, and Proton services
  * in the macOS menu bar.
  *
  * Refresh schedule is set via <swiftbar.schedule> above using cron syntax.
@@ -16,6 +16,7 @@
  * Status page APIs (Atlassian Statuspage format):
  *   - GitHub:  https://www.githubstatus.com/api/v2
  *   - Claude:  https://status.claude.com/api/v2
+ *   - Proton:  https://status.proton.me/api/v2
  */
 
 import https from "https";
@@ -52,6 +53,12 @@ const SERVICES = [
     statusUrl: "https://status.claude.com/api/v2/status.json",
     componentsUrl: "https://status.claude.com/api/v2/components.json",
     pageUrl: "https://status.claude.com",
+  },
+  {
+    name: "Proton",
+    statusUrl: "https://status.proton.me/api/v2/status.json",
+    componentsUrl: "https://status.proton.me/api/v2/components.json",
+    pageUrl: "https://status.proton.me",
   },
 ];
 
