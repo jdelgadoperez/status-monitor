@@ -43,16 +43,16 @@ interface Component {
 
 const SERVICES = [
   {
-    name: "GitHub",
-    statusUrl: "https://www.githubstatus.com/api/v2/status.json",
-    componentsUrl: "https://www.githubstatus.com/api/v2/components.json",
-    pageUrl: "https://www.githubstatus.com",
-  },
-  {
     name: "Claude",
     statusUrl: "https://status.claude.com/api/v2/status.json",
     componentsUrl: "https://status.claude.com/api/v2/components.json",
     pageUrl: "https://status.claude.com",
+  },
+  {
+    name: "GitHub",
+    statusUrl: "https://www.githubstatus.com/api/v2/status.json",
+    componentsUrl: "https://www.githubstatus.com/api/v2/components.json",
+    pageUrl: "https://www.githubstatus.com",
   },
   {
     name: "Proton",
